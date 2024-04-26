@@ -1,5 +1,4 @@
 # Django_RestAPI_PostgreSQL_JWT_Upload Server & Client (PyQT5) or (WinAPI C++)
-![Снимок](https://github.com/sxfour/Django_RestAPI_PostgreSQL_JWT_Upload/assets/112577182/09aaa80f-3180-4929-9ea8-4bcad472f26d)
 # (Client Python, PyQT5) Отправка HTTP запроса с клиента на сервер
 - Для авторизации клиента необходимо использовать ключ JWT
 - POST запрос загружает на сервер Django, файлы с валидацией формата .pdf
