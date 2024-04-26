@@ -1,0 +1,12 @@
+# Вместо curl можно использовать postman
+# Получение валидных токенов и обновления их.
+curl -X POST -H "Content-Type: application/json" -d '{"username": "root", "password": "toor"}' http://127.0.0.1:8000/api/token/
+
+# Для аутентификации с токеном и получения ответа всех записей с json из PostgreSQL.
+curl -H "Authorization: PostgreSQL_JWTAuth #YOU TOKEN#" http://127.0.0.1:8000/users
+
+# Для аутентификации с токеном и получения ответа записи по id с json из PostgreSQL.
+curl -H "Authorization: PostgreSQL_JWTAuth #YOU TOKEN#" http://127.0.0.1:8000/users/1
+
+# Страница для проверки пройденной аутентификации.
+curl -H "Authorization: PostgreSQL_JWTAuth #YOU TOKEN#" http://127.0.0.1:8000/test_jwt_token
