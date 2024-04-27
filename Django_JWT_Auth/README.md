@@ -1,6 +1,6 @@
 # Django_JWT_Auth Python 3.11.0
 
-# Перед запуском проекта необходимо добавить базу данных, например стандартную sqlite, default: PostgreSQL
+# Перед запуском проекта необходимо добавить db, например стандартную sqlite, default: PostgreSQL
     pip install -r requirements.txt
     python manage.py migrate
     python manage.py createsuperuser
