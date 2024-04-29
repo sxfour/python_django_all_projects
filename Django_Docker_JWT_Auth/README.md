@@ -4,7 +4,7 @@
 https://github.com/sxfour/python_django_all_projects/assets/112577182/dd5dffac-53d8-435c-a459-4c726b319189
 
 # Подключение к django с токеном JWT и получение response с успешным доступом
-https://github.com/sxfour/python_django_all_projects/assets/112577182/109dfa08-0554-466d-9939-9b4799840669
+https://github.com/sxfour/python_django_all_projects/assets/112577182/28a1eabf-8788-48ee-9ac2-d35c5d9f1cf1
 
 # Запуск локально
       python manage.py makemigrations && python manage.py migrate && python manage.py createsuperuser
