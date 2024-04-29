@@ -6,7 +6,7 @@
 
 # Запуск локально
 - Перед запуском проекта необходимо добавить базу данных, например стандартную sqlite
-- python manage.py makemigrations && python manage.py migrate && python manage.py createsuperuser например (root:toor)
+      python manage.py makemigrations && python manage.py migrate && python manage.py createsuperuser например (root:toor)
 # Запуск docker
 - Переходим в директорию jwt_config
 - docker build -t django_restapi_jwt_auth .
