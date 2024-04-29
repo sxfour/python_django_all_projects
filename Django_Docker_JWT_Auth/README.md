@@ -5,7 +5,7 @@
 # Подключение к django с токеном JWT и получение response с успешным доступом
 
 # Запуск локально
-      python manage.py makemigrations && python manage.py migrate && python manage.py createsuperuser например (root:toor)
+      python manage.py makemigrations && python manage.py migrate && python manage.py createsuperuser
 # Запуск docker, переходим в директорию jwt_config
       docker build -t django_restapi_jwt_auth .
       docker run -m 200m --cpus="1" -it -p 8000:8000 django_restapi_jwt_auth
