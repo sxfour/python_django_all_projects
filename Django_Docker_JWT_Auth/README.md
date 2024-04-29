@@ -5,13 +5,11 @@
 # Подключение к django с токеном JWT и получение response с успешным доступом
 
 # Запуск локально
-- Перед запуском проекта необходимо добавить базу данных, например стандартную sqlite
       python manage.py makemigrations && python manage.py migrate && python manage.py createsuperuser например (root:toor)
-# Запуск docker
-- Переходим в директорию jwt_config
-- docker build -t django_restapi_jwt_auth .
-- docker run -m 200m --cpus="1" -it -p 8000:8000 django_restapi_jwt_auth
+# Запуск docker, переходим в директорию jwt_config
+      docker build -t django_restapi_jwt_auth .
+      docker run -m 200m --cpus="1" -it -p 8000:8000 django_restapi_jwt_auth
 # Очистка хранилища docker
-- docker system prune -a
-- docker system prune
-- docker rm $(docker ps -q -f status=exited)
+      docker system prune -a
+      docker system prune
+      docker rm $(docker ps -q -f status=exited)
