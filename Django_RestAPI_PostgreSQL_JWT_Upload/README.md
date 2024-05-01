@@ -8,8 +8,7 @@
 https://github.com/sxfour/django_all_projects/assets/112577182/46445d07-8408-42f8-85df-b2369481ceb8
 
 # (Client C++, WinAPI) Отправка HTTP запроса с клиента на сервер
-
-https://github.com/sxfour/django_all_projects/assets/112577182/887ffc72-5226-4417-8644-500b31218bdd
+https://github.com/sxfour/python_django_all_projects/assets/112577182/a56e3a1a-dee4-4668-9b2b-103b4547a7ec
 
 # (Server Django Python)Соединение через ssh с перенаправлением портов внутри туннеля, client <==> (SSH) remote server <==> restapi
 - При запуске сервера, в деструкторе создания маршрута, логгируется безопасная ссылка на маршрут Админ панели
