@@ -1,5 +1,6 @@
 // WinAPI_Rest_Upload.cpp : Определяет точку входа для приложения.
 //
+#pragma comment(linker,"\"/manifestdependency:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' processorArchitecture='*' publicKeyToken='6595b64144ccf1df' language='*'\"")
 
 #include "framework.h"
 #include "WinAPI_Rest_Upload.h"
@@ -83,7 +84,7 @@ ATOM MyRegisterClass(HINSTANCE hInstance) {
     wcex.hInstance      = hInstance;
     wcex.hIcon          = LoadIcon(hInstance, MAKEINTRESOURCE(IDI_WINAPIRESTUPLOAD));
     wcex.hCursor        = LoadCursor(nullptr, IDC_ARROW);
-    wcex.hbrBackground  = CreateSolidBrush(RGB(135, 206, 250));
+    wcex.hbrBackground  = CreateSolidBrush(RGB(240, 240, 240));
 
     wcex.lpszMenuName   = MAKEINTRESOURCEW(IDC_WINAPIRESTUPLOAD);
     wcex.lpszClassName  = szWindowClass;
