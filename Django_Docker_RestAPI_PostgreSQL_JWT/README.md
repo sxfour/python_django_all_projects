@@ -5,7 +5,7 @@
 - Python 3.10
 - RestAPI using PostgreSQL
 
-# Конфигурация перед запуском проекта
+# Конфигурация перед запуском проекта (локально)
       pip install -r requirements.txt
       python manage.py migrate PostgreSQL_JWT_App
       python manage.py createsuperuser
