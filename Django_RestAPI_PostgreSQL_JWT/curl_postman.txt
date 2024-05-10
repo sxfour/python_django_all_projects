@@ -1,3 +1,5 @@
+#################################################################################################################################################################################################################################################
+
 # Вместо curl можно использовать postman
 # Получение валидных токенов и обновления их.
 curl -X POST -H "Content-Type: application/json" -d '{"username": "root", "password": "toor"}' http://127.0.0.1:8000/api/token/
@@ -10,3 +12,16 @@ curl -H "Authorization: PostgreSQL_JWTAuth #YOU TOKEN#" http://127.0.0.1:8000/us
 
 # Страница для проверки пройденной аутентификации.
 curl -H "Authorization: PostgreSQL_JWTAuth #YOU TOKEN#" http://127.0.0.1:8000/test_jwt_token
+
+#################################################################################################################################################################################################################################################
+
+# Добавить пользователя
+curl -X POST -H "Content-Type: application/json" -H "Authorization: PostgreSQL_JWTAuth #YOU TOKEN#" -d '{"user_id": 1, "username": "xXxMEDVEsDxXx", "secret_phrase": "wtf?", "user_token": "66743", "uuid_saved": "aecf3aa8-9908-4f4e-ba05-6c21b9f54bcb"}' http://127.0.0.1:8000/users
+
+# Обновить данные
+curl -X PUT -H "Content-Type: application/json" -H "Authorization: PostgreSQL_JWTAuth #YOU TOKEN#" -d '{"user_id": 1, "username": "xXxUPDATEDxXx", "secret_phrase": "wtf?", "user_token": "66743", "uuid_saved": "aecf3aa8-9908-4f4e-ba05-6c21b9f54bcb"}' http://127.0.0.1:8000/users
+
+# Удаление по id маршруту
+curl -X DELETE -H "Authorization: PostgreSQL_JWTAuth #YOU TOKEN#" http://127.0.0.1:8000/users/1
+
+#################################################################################################################################################################################################################################################
