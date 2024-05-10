@@ -4,7 +4,7 @@
 - requirements.txt
 - Python 3.10
 - RestAPI using PostgreSQL
-  
+
 # Конфигурация перед запуском проекта
       pip install -r requirements.txt
       python manage.py migrate PostgreSQL_JWT_App
@@ -14,3 +14,11 @@ https://github.com/sxfour/Django_RestAPI_PostgreSQL_JWT/assets/112577182/d88ada1
 
 # Поиск всех записей и получение токена
 https://github.com/sxfour/Django_RestAPI_PostgreSQL_JWT/assets/112577182/855a1259-28ee-4a1c-880b-55d855a591ef
+
+# Запуск в Docker
+      chmod +x install.sh
+      ./install.sh
+
+# Очистка и удаление контейнеров
+    docker stop #CURRENT_CONTAINER#
+    docker system prune -a
