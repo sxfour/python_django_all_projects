@@ -13,6 +13,8 @@
 # Запуск в Docker
       chmod +x install.sh
       ./install.sh
+      
+![docker](https://github.com/sxfour/python_django_all_projects/assets/112577182/5de1383c-89fc-453f-8579-b242d5490e94)
 
 # Очистка и удаление контейнеров
     docker stop #CURRENT_CONTAINER#
