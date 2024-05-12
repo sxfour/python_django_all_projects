@@ -1,0 +1,8 @@
+# Получить список всех пользователей
+curl -H http://127.0.0.1:8000/users
+
+# Добавить пользователя
+curl -X POST -H "Content-Type: application/json" -d '{"user_id": 1, "username": "admin", "status": "OK", "time":"13.05.2024/00:38:12"}' http://127.0.0.1:8000/users
+
+# Обновить данные
+curl -X PUT -H "Content-Type: application/json" -d '{"user_id": 1, "username": "admin", "status": "ALARM", "time":"13.05.2024/01:28:42"}' http://127.0.0.1:8000/users
