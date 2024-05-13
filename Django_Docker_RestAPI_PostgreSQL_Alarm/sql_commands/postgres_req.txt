@@ -1,6 +1,6 @@
 docker exec -it restapi_postgresql_alarm psql -U postgres -d djangoRestAPIAlarm
 ##########################################################
-                          FUNC
+                          
 ##########################################################
 CREATE OR REPLACE FUNCTION trigger_set_timestamp()
 RETURNS TRIGGER AS $$
@@ -11,7 +11,7 @@ END;
 $$ LANGUAGE plpgsql;
 
 ##########################################################
-                          FUNC
+                          
 ##########################################################
 ALTER TABLE public."PostgreSQLViewer_users" 
   ADD COLUMN created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(), 
@@ -19,7 +19,7 @@ ALTER TABLE public."PostgreSQLViewer_users"
   ADD COLUMN completed_at TIMESTAMPTZ;
 
 ##########################################################
-                        TRIGGER
+                        
 ##########################################################
 CREATE TRIGGER set_timestamp
 BEFORE UPDATE ON public."PostgreSQLViewer_users"
