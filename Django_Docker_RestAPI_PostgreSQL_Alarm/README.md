@@ -1,5 +1,5 @@
 # RestAPI Arduino Alarm (Server)
-# Запуск sh
+# Запуск
     chmod +x install.sh
     ./install.sh
 # Удаление
