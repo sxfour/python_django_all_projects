@@ -1,4 +1,6 @@
 # RestAPI Arduino Alarm (Server)
+- Автоматическое развёртывание двух контейнеров
+- Счётчик времени в db psql
 # Запуск
     chmod +x install.sh
     ./install.sh
