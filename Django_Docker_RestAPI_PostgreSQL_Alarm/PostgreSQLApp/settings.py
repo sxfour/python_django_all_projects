@@ -130,5 +130,5 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.mail.ru'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 25
-EMAIL_HOST_USER = "arduinoalarm@mail.ru"
-EMAIL_HOST_PASSWORD = "AskS2aPXgthj1veaVP7S"
+EMAIL_HOST_USER = " "
+EMAIL_HOST_PASSWORD = " "
