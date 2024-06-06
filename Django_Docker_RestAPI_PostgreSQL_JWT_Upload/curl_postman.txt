@@ -1,0 +1,13 @@
+# Вместо curl можно использовать postman
+
+# POST Получение валидных токенов и обновления их.
+curl -X POST -H "Content-Type: application/json" -d '{"username": "teploset", "password": "24e8qd\"\"\"B"}' http://127.0.0.1:7631/teploset_api/token/
+
+# GET Для аутентификации с токеном и получения ответа всех записей с документами
+curl -H "Authorization: Upload_MTS # YOU TOKEN #" http://127.0.0.1:7631/teploset_docs/
+
+# POST Для обновления токена
+curl -X POST -H "Content-Type: application/json" -d '{"refresh": " # REFRESH TOKEN #"}' http://127.0.0.1:7631/teploset_api/token/refresh/
+
+# POST Для создания запроса на запись данных в .pdf
+curl -X POST -H "Authorization: Upload_MTS # YOU TOKEN #" -F 'name' -F 'upload_file' http://127.0.0.1:7631/teploset_docs/
