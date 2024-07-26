@@ -1,1 +1,5 @@
-
+# Контейнер с чатом (Django)
+![main_page](https://github.com/user-attachments/assets/b5ab2a35-3794-4a60-90af-da7cd8656821)
+![rooms](https://github.com/user-attachments/assets/204220d1-a98b-493c-93b9-4cf84a185de4)
+![chat](https://github.com/user-attachments/assets/44d9d0cc-1d92-42db-a41b-f4faa0775653)
+![reg](https://github.com/user-attachments/assets/c3974d31-482e-45d8-928e-824b435360ff)
