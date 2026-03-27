@@ -1,4 +1,4 @@
-* {
+  * {
     box-sizing: border-box;
   }
 
@@ -86,9 +86,12 @@
     }
   }
   /* Задержки для анимации */
-  .server:nth-child(1) { animation-delay: 0.6s; }
-  .server:nth-child(2) { animation-delay: 0.4s; }
-  .server:nth-child(3) { animation-delay: 0.2s; }
+  .server:nth-child(1) { animation-delay: 0.0s; }
+  .server:nth-child(2) { animation-delay: 0.2s; }
+  .server:nth-child(3) { animation-delay: 0.4s; }
+  .server:nth-child(4) { animation-delay: 0.6s; }
+  .server:nth-child(5) { animation-delay: 0.8s; }
+  .server:nth-child(6) { animation-delay: 1.0s; }
 
   .server-header {
     display: flex;
@@ -105,6 +108,25 @@
     flex-wrap: wrap;
   }
 
+  /* добавим стиль для круглого окошка */
+  .speed-badge {
+    display: inline-block;
+    background: #4CAF50;
+    color: #fff;
+    font-weight: bold;
+    padding: 8px 14px;
+    border-radius: 50%;
+    font-size: 0.9em;
+    min-width: 60px;
+    text-align: center;
+    box-shadow: inset 0 0 4px rgba(0,0,0,0.2);
+    margin-left: 10px;
+    transition: background 0.3s, transform 0.2s;
+  }
+  .speed-badge:hover {
+    background: #45a049;
+    transform: scale(1.05);
+  }
   /* Статус индикатор */
   .status-dot {
     width: 10px;
@@ -210,7 +232,7 @@
     color: #555;
   }
 
-  /* QR-код контейнер, появится при нажатии, листая вниз */
+  /* QR-код контейнер, изначально скрыт */
   #qrCodeContainer {
     display: none;
     opacity: 0;
@@ -295,6 +317,30 @@
     font-size: 1em;
     color: #999;
     text-align: center;
+  }
+
+  /* Плавающая кнопка "Подписаться" */
+  .subscribe-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #00b7f5b8;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    cursor: pointer;
+    z-index: 1000;
+    transition: background 0.3s, transform 0.2s;
+  }
+  .subscribe-btn:hover {
+    background-color: #00b5f5b8;
+    transform: scale(1.1);
   }
 
   @media(max-width: 600px){
