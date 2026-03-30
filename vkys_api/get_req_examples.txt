@@ -1,0 +1,97 @@
+**Примеры запросов:**
+
+*   **GET (получить все рецепты):**
+    ```
+    GET http://127.0.0.1:8000/api/recipes/
+    ```
+*   **GET (получить 5 рецептов):**
+    ```
+    GET http://127.0.0.1:8000/api/recipes/?numbers=5
+    ```
+*   **GET (получить рецепты с тегом "side dish"):**
+    ```
+    GET http://127.0.0.1:8000/api/recipes/?tags=side dish
+    ```
+*   **GET (получить 3 рецепта с тегами "side dish" или "dinner"):**
+    ```
+    GET http://127.0.0.1:8000/api/recipes/?numbers=3&tags=side dish,dinner
+    ```
+*   **POST (добавить новый рецепт):**
+    ```
+    POST http://127.0.0.1:8000/api/recipes/
+    Content-Type: application/json
+
+    {
+        "recipes": [
+            {
+                "id": 999999,
+                "image": "...",
+                "imageType": "...",
+                "title": "Мой новый рецепт",
+                "readyInMinutes": 30,
+                "servings": 4,
+                "sourceUrl": "...",
+                "vegetarian": true,
+                "vegan": false,
+                "glutenFree": true,
+                "dairyFree": false,
+                "veryHealthy": true,
+                "cheap": false,
+                "veryPopular": false,
+                "sustainable": false,
+                "lowFodmap": false,
+                "weightWatcherSmartPoints": 5,
+                "gaps": "no",
+                "preparationMinutes": 10,
+                "cookingMinutes": 20,
+                "aggregateLikes": 0,
+                "healthScore": 10.0,
+                "creditsText": "...",
+                "sourceName": "...",
+                "extendedIngredients": [
+                    {
+                        "id": 1001,
+                        "aisle": "...",
+                        "image": "...",
+                        "consistency": "...",
+                        "name": "Ингредиент 1",
+                        "nameClean": "...",
+                        "original": "...",
+                        "originalName": "...",
+                        "amount": 1.0,
+                        "unit": "...",
+                        "meta": [],
+                        "measures": {}
+                    }
+                ],
+                "summary": "...",
+                "cuisines": ["Русская"],
+                "dishTypes": ["основное блюдо"],
+                "diets": ["вегетарианская"],
+                "instructions": "..."
+            }
+        ]
+    }
+    ```
+*   **GET (получить рецепт по ID):**
+    ```
+    GET http://127.0.0.1:8000/api/recipes/999999/
+    ```
+*   **PUT (обновить рецепт по ID):**
+    ```
+    PUT http://127.0.0.1:8000/api/recipes/999999/
+    Content-Type: application/json
+
+    {
+        "recipes": [
+            {
+                "id": 999999,
+                "title": "Обновленный рецепт",
+                ... (остальные поля)
+            }
+        ]
+    }
+    ```
+*   **DELETE (удалить рецепт по ID):**
+    ```
+    DELETE http://127.0.0.1:8000/api/recipes/999999/
