@@ -3,7 +3,7 @@ from rest_framework.response import Response
 from rest_framework import status
 import openai
 
-openai.api_key = "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"  # Заменить на свой ключ!
+openai.api_key = ""  # Заменить на свой ключ!
 
 
 class CookAssistantView(APIView):
