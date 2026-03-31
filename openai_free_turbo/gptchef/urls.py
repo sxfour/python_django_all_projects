@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import CookAssistantView
+from .views import CookAssistantView, CookGPT4View
 
 urlpatterns = [
     path('cook/', CookAssistantView.as_view(), name='cook-assistant'),
